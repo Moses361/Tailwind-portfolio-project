@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Tailwind Portfolio</title>
+
+  <!-- Compiled Tailwind CSS -->
+  <link href="dist/output.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+
+<!-- Intro Section -->
+<section class="min-h-screen bg-gradient-to-t from-indigo-200 to-white">
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <!-- Brand -->
+      <div class="flex items-center gap-2">
+        <img src="images/brand-image.png" class="w-8" alt="Brand">
+        <span class="text-2xl font-bold text-indigo-900">Portfolio</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-8 text-gray-600 font-bold text-sm uppercase">
+        <li><a class="hover:text-indigo-600" href="#home">Home</a></li>
+        <li><a class="hover:text-indigo-600" href="#about">About</a></li>
+        <li><a class="hover:text-indigo-600" href="#services">Services</a></li>
+        <li><a class="hover:text-indigo-600" href="#works">Works</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="flex items-center gap-4">
+        <img src=" images/moon img.png"
+             class="hidden md:block w-5 cursor-pointer"
+             alt="Dark Mode">
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden flex flex-col space-y-1 cursor-pointer focus:outline-none hamburger">
+          <div class="w-6 h-0.5 bg-black transition-transform"></div>
+          <div class="w-6 h-0.5 bg-black transition-opacity"></div>
+          <div class="w-6 h-0.5 bg-black transition-transform"></div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Animation -->
+   <div class = "absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:48 xl:text-7xl font-bold">
+    <span class = "text-gray-600">Freelance</span>
+    <p class = "text-red-50">Developer</p>
+   </div>
+   <!--intro content  -->
+   <!--image content-->
+   <img src = "images/Moses profile.jpg" alt = "profile picture" class = "absolute bottom-0 right-0 h-5/6 object-cover bg lg:left-0 mx-auto">
+   <!-- circle content-->
+    <div class = "hidden lg:block absolute bottom-1/4 right-0 left-0 max-auto w-900 rounded-full -z-10"
+    <!--animated text -->
+    <!--text-->
+    <div class ="hidden lg:flex-col absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3 flex-col gap-5 rounded md:shadow-red-500 shadow-lg">
+      <h1 class = "text-4xl font-bold text-indigo-900">Hi i am Moses</h1>
+      <p>I am a freelance developer</p>
+      <a href = "#" class  = "bg-indigo-600 text-white text-xl p-3"
+    </div
+  <!-- Hero Content -->
+  <div class="flex items-center justify-center min-h-screen pt-20 relative" id="home">
+    <h1 class="text-4xl md:text-6xl font-bold text-indigo-900 text-center px-4">
+      Welcome to My Portfolio 🚀
+    </h1>
+  </div>
+</section>
+
+<script src = "src/script.js"></script>
+</body>
+</html>
